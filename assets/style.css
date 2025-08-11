@@ -1,0 +1,47 @@
+/* body::-webkit-scrollbar {
+    width: 12px;                
+    background-color: #6a0178;
+}
+
+body::-webkit-scrollbar-track {
+    background: #6a0178;           
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #020202;  
+    border-radius: 20px;          
+    border: 3px solid #6a0178;    
+}
+
+
+
+body{
+  background-image: linear-gradient(to right, rgb(255, 235, 180) , rgb(212, 181, 253));
+} */
+
+h1, h2{
+    text-align: center;
+}
+
+section{
+    margin: 8%;
+}
+
+
+.botao{
+    background-color: #6a0178;
+    color: white;
+}
+
+.botao:hover{
+    background-color: #390041;
+        color: white;
+
+}
+
+.container2{
+    margin-left: 50%;
+    margin-right: 50%;
+
+}
+
