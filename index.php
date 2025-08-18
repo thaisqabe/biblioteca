@@ -13,15 +13,10 @@
         include_once "pedaco.php";
     ?>
     
-    <div class=" text-center container" role="group" aria-label="Basic example">
-        <!-- <div class="row"> -->
-            <!-- <div class="col-6"> -->
-                <a href="listar.php" type="button" class="btn botao">Lista de Livros</a>
-            <!-- </div> -->
-            <!-- <div class="col-6"> -->
-                <a href="form_cadastro.php" type="button" class="btn botao">Cadastrar Livros</a>
-<!-- </div> -->
-        <!-- </div> -->
+    <div class=" text-center container " role="group" aria-label="Basic example">
+       
+                <a href="listar.php" type="button" class="btn botao btn-lg botoes">Lista de Livros</a>
+                <a href="form_cadastro.php" type="button" class="btn botao btn-lg botoes">Cadastrar Livros</a>
     </div>
     </section>
 </body>

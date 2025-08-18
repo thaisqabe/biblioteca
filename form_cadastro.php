@@ -16,34 +16,38 @@
 
     <h2>Formulário para cadastro de livros</h2>
 
-    <div class="container">
+    <div class="container container2">
 
-    <form>
+    <form class="form" action="inserir.php" method="POST">
         <div class="mb-3">
-            <input type="text" class="form-control" id="" aria-describedby="" placeholder="Digite o título do livro">
+            <input type="text" name="titulo" class="form-control" id="" aria-describedby="" placeholder="Digite o título do livro">
         </div>
  
         <div class="mb-3">
-            <input type="text" class="form-control" id="" aria-describedby="" placeholder="Digite gênero do livro">
+            <input type="text" name="genero" class="form-control" id="" aria-describedby="" placeholder="Digite gênero do livro">
         </div>
 
         <div class="mb-3">
-            <input type="text" class="form-control" id="" aria-describedby="" placeholder="Digite o autor do livro">
+            <input type="text" name="autor" class="form-control" id="" aria-describedby="" placeholder="Digite o autor do livro">
         </div>
 
         <div class="mb-3">
-            <input type="text" class="form-control" id="" aria-describedby="" placeholder="Digite o ano do livro">
+            <input type="text" name="ano" class="form-control" id="" aria-describedby="" placeholder="Digite o ano do livro">
         </div>
 
         <div class="mb-3">
-            <input type="text" class="form-control" id="" aria-describedby="" placeholder="Digite o número de páginas do livro">
+            <input type="text" name="paginas" class="form-control" id="" aria-describedby="" placeholder="Digite o número de páginas do livro">
         </div>
-
+        <div class="container2">
         <button type="submit" class="btn botao">Cadastrar</button>
+        </div>
+
     </form>
 
     </div>
+    <div class="container2">
         <a href="index.php" type="button" class="btn botao">Voltar</a>
+    <div>
 
 </section>
 </body>
