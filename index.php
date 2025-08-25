@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <section>
+    <section class="">
     <?php
         include_once "pedaco.php";
     ?>
     
-    <div class=" text-center container " role="group" aria-label="Basic example">
+    <div class=" text-center container indexc " role="group" aria-label="Basic example">
        
                 <a href="listar.php" type="button" class="btn botao btn-lg botoes">Lista de Livros</a>
                 <a href="form_cadastro.php" type="button" class="btn botao btn-lg botoes">Cadastrar Livros</a>
     </div>
+
     </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

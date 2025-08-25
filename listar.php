@@ -36,7 +36,8 @@
                     <th scope="col">Autor</th>  
                     <th scope="col">Ano</th>
                     <th scope="col">Páginas</th>
-                    
+                    <th scope="col">Opções</th>
+
                 </tr>
             </thead>
 
@@ -49,43 +50,24 @@
 
                     echo "<tr>";
                     echo "<th scope='row'>" .$livro['id']."</th>";
-                    echo "<td>" . $livro['ititulod'] ." </td>";
+                    echo "<td>" . $livro['titulo'] ." </td>";
                     echo "<td>". $livro['genero'] ."</td>";
                     echo "<td>" . $livro['autor'] ."</td>";
                     echo "<td>". $livro['ano'] ."</td>";
                     echo "<td>". $livro['paginas'] ."</td>";
+                    echo "
+                    <td>
+                        <div class=' text-center' role='group' aria-label='Basic example'>
+                            <a href='form_atualizar.php?id=". $livro['id']."' type='button' class='btn botaot'>Atualizar</a>
+                            <a href='#' type='button' class='btn botaol'>Apagar</a>
+                        </div>
+                    </td>
+                    ";
+
                     echo "</tr>";
     }
 ?>
 
-
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Dom Casmurro</td>
-                    <td>Romance</td>
-                    <td>Machado de Assis</td>
-                    <td>1900</td>
-                    <td>338</td>
-
-                </tr>
-             <tr>
-                    <th scope="row">2</th>
-                    <td>Dom Casmurro</td>
-                    <td>Romance</td>
-                    <td>Machado de Assis</td>
-                    <td>1900</td>
-                    <td>338</td>
-
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Dom Casmurro</td>
-                    <td>Romance</td>
-                    <td>Machado de Assis</td>
-                    <td>1900</td>
-                    <td>338</td>
-
-                </tr>
               
             </tbody>
         </table>

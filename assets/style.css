@@ -29,31 +29,82 @@ section{
 }
 
 
+
+
 .botao{
     background-color: #6a0178;
     color: white;
     width: 15%;
-    height: 50px;
     padding: 1%;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.botaot{
+    background-color: #2d7801;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+    
+ 
+}
+.botaol{
+    background-color: #78011f;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.botaot:hover{
+    background-color: #1a4600;
+    color: white;
+    transform: scale(1.02);
+
+ 
+}
+
+.botaol:hover{
+    background-color: #460011;
+    color: white;
+    transform: scale(1.02);
+
+
 }
 
 .botao:hover{
-    background-color: #390041;
-        color: white;
-        box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+    background-color: #390041 ;
+    color: white;
+    box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+
 
 }
 
 .container2{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 3%;
 
 }
 
 .botoes{
 
-margin: 8%;
+    margin: 8%;
+    width: 30%;
+    height: 80px;
+    padding-top: 2%;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+
+}
+
+.botoes:hover{
+    transform: scale(1.04);
+    box-shadow: 12px 12px 10px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.indexc{
+    margin-top: 12%;
 }
 
 .form{
@@ -63,7 +114,10 @@ margin: 8%;
 
 
   table, th, td {
-    border: 1px solid rgb(162, 0, 255); /* Sets a 1px solid blue border for the table and its cells */
+    border: 1px solid rgb(162, 0, 255); 
   }
 
+  td, th {
+    background-color: #aaa8bd3d !important;
+  }
  
