@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Ago-2025 às 13:18
+-- Tempo de geração: 01-Set-2025 às 14:06
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -43,8 +43,8 @@ CREATE TABLE `livro` (
 --
 
 INSERT INTO `livro` (`id`, `titulo`, `genero`, `ano`, `autor`, `paginas`) VALUES
-(2, 'As vantagens de ser invísivel', 'Ficção juvenil', 1999, 'Stephen Chbosky', 288),
-(3, 'Alice no País das Maravilhas', 'Literatura Infantil', 0, 'Lewis Carroll', 136);
+(2, 'As vantagens de ser invísivel', 'Ficção', 1999, 'Stephen Chbosky', 288),
+(3, 'Alice no País das Maravilhas', 'Literatura Infantil', 1865, 'Lewis Carroll', 136);
 
 --
 -- Índices para tabelas despejadas

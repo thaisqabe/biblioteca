@@ -6,6 +6,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -14,10 +17,9 @@
         include_once "pedaco.php";
 
 
-        $id = $_GET['id'];
         // echo "valor do  id: " . $id;
 
-        include_once 'conexao.php';
+            $id = $_GET['id'];
 
 
     ?>
@@ -26,49 +28,60 @@
 
     <div class="container container2">
 
-    <form class="form" action="#" method="POST">
+    <form class="form" action="atualizar.php?id=<?php echo $id;?>" method="POST">
 
         <?php
+
+            require 'conexao.php';
             $sql = "SELECT * FROM livro where id = $id";
             $stmt = $pdo->query($sql);
-            while ($livro = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                    echo "Título: " . $livro['titulo'] . "<br>";
-                    echo "Gênero: " . $livro['genero'] . "<br>";
-                    echo "Autor: " . $livro['autor'] . "<br><br>";
+            $livro = $stmt->fetch(PDO::FETCH_ASSOC);
 
-                    echo "Ano: " . $livro['ano'] . "<br>";
 
-                    echo "Páginas: " . $livro['paginas'] . "<br><br>";
-            }
+
+            // while ($livro = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            //         echo "Título: " . $livro['titulo'] . "<br>";
+            //         echo "Gênero: " . $livro['genero'] . "<br>";
+            //         echo "Autor: " . $livro['autor'] . "<br><br>";
+
+            //         echo "Ano: " . $livro['ano'] . "<br>";
+
+            //         echo "Páginas: " . $livro['paginas'] . "<br><br>";
+            // }
     ?>
     
 
         <div class="mb-3">
-            <input type="text" value=
-            "
-            <?php
-                echo $livro['titulo']
+            <label for="" class="form-label" >Título: </label>
+            <input type="text" value="<?php echo $livro['titulo']?>"
 
-            ?>
-            "
+            name="novo_titulo" class="form-control" id="" aria-describedby="" >
 
-            name="titulo" class="form-control" id="" aria-describedby="" >
         </div>
  
         <div class="mb-3">
-            <input type="text" name="genero" class="form-control" id="" aria-describedby="" >
+            <label for="" class="form-label" >Gênero:</label>
+
+            <input type="text" value="<?php echo $livro['genero']?>" name="novo_genero" class="form-control" id="" aria-describedby="" >
         </div>
 
         <div class="mb-3">
-            <input type="text" name="autor" class="form-control" id="" aria-describedby="" >
+
+            <label for="" class="form-label" >Autor:</label>
+
+            <input type="text" value="<?php echo $livro['autor']?>" name="novo_autor" class="form-control" id="" aria-describedby="" >
         </div>
 
         <div class="mb-3">
-            <input type="text" name="ano" class="form-control" id="" aria-describedby="" >
+            <label for="" class="form-label">Ano:</label>
+
+            <input type="number" value="<?php echo $livro['ano']?>" name="novo_ano" class="form-control" id="" aria-describedby="" >
         </div>
 
         <div class="mb-3">
-            <input type="text" name="paginas" class="form-control" id="" aria-describedby="" >
+            <label for="" class="form-label">Páginas:</label>
+            
+            <input type="number" value="<?php echo $livro['paginas']?>" name="novo_paginas" class="form-control" id="" aria-describedby="" >
         </div>
         <div class="container2">
         <button type="submit" class="btn botao">Atualizar</button>
