@@ -1,16 +1,16 @@
 body::-webkit-scrollbar {
     width: 12px;                
-    background-color: black;
+    background-color: white;
 }
 
 body::-webkit-scrollbar-track {
-    background: black;           
+    background: white;           
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #6a0178;  
     border-radius: 20px;          
-    border: 3px solid black;    
+    border: 3px solid white;    
 }
 
 
@@ -82,21 +82,22 @@ p{
 
 }
 
-.botaot:hover{
-    background-color: #1a4600;
-    color: white;
+.botaot:hover, .botaot:active{
+    background-color: #1a4600 !important;
+    color: white !important;
     transform: scale(1.02);
 
  
 }
 
-.botaol:hover{
-    background-color: #460011;
-    color: white;
+.botaol:hover, .botaol:active{
+    background-color: #460011 !important;
+    color: white !important;
     transform: scale(1.02);
 
 
 }
+
 
 .botao:hover{
     background-color: #390041 ;

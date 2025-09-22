@@ -52,7 +52,7 @@
                     <td>
                         <div class=' text-center' role='group' aria-label='Basic example'>
                             <a href='form_atualizar.php?id=". $livro['id']."' type='button' class='btn botaot'>Atualizar</a>
-                            <a href='form_excluir.php?titulo=?" . $livro['titulo']. "' type='button' class='btn botaol'>Apagar</a>
+                            <a href='excluir.php?id=" . $livro['id']. "' type='button' class='btn botaol'>Apagar</a>
                         </div>
                     </td>
                     ";
